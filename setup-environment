@@ -236,6 +236,9 @@ EOF
     done
 fi
 
+echo "INHERIT += \"rm_work\"" >> conf/local.conf
+echo "RM_WORK_EXCLUDE += \"u-boot-imx linux-imx\"" >> conf/local.conf
+
 cat <<EOF
 
 Welcome to Freescale Community BSP
